@@ -1,8 +1,11 @@
 Source of walkthrough found here:
+
 https://developer.apple.com/tutorials/swiftui/creating-and-combining-views
 
 
-Copyright 2018 Michael Vilabrera
+
+
+Copyright 2019 Michael Vilabrera
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
