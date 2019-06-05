@@ -14,6 +14,7 @@ struct CustomSwiftUIView : View {
             .clipShape(Circle())
             .overlay(Circle().stroke(Color.gray, lineWidth: 5))
             .shadow(radius: 11)
+            .aspectRatio(contentMode: .fit)
     }
 }
 
