@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  LandmarkDetail.swift
 //  PlayingWithSwiftUI
 //
 //  Created by Michael Vilabrera on 6/4/19.
@@ -8,15 +8,18 @@
 
 import SwiftUI
 
-struct ContentView : View {
+struct LandmarkDetail : View {
+    var landmark: Landmark
+    
     var body: some View {
         VStack {
-            MapView()
+            MapView(coordinate: landmark.locationCoordinate)
+                .edgesIgnoringSafeArea(.top)
                 .frame(height: 300)
-            CustomSwiftUIView()
+            CircleImage(image: landmark.image(forSize: 250))
                 .offset(y: -130)
                 .padding(.bottom, -130)
-            VStack(alignment: .trailing) {
+            VStack(alignment: .leading) {
                 Text("Lets Do This")
                     .font(.largeTitle)
                     .color(Color.orange)
@@ -27,19 +30,19 @@ struct ContentView : View {
                     Text("For Real")
                         .font(.subheadline)
                     }
-                    .padding()
                 }
                 .padding()
             
                 Spacer()
         }
+        .navigationBarTitle(Text(landmark.name), displayMode: .inline)
     }
 }
 
 #if DEBUG
-struct ContentView_Previews : PreviewProvider {
+struct LandmarkDetail_Previews : PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LandmarkDetail(landmark: landmarkData[0])
     }
 }
 #endif
