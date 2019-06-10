@@ -42,14 +42,11 @@ struct LandmarkDetail : View {
                         }
                     }
                 }
-                Text(landmark.park)
-                    .font(.largeTitle)
-                    .color(Color.orange)
                 HStack(alignment: .top) {
-                    Text("Right Right Now!")
+                    Text(landmark.park)
                         .font(.subheadline)
                     Spacer()
-                    Text("For Real")
+                    Text(landmark.state)
                         .font(.subheadline)
                     }
                 }
