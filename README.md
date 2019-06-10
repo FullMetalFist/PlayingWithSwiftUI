@@ -1,9 +1,13 @@
 Source of walkthrough found here:
 
-https://developer.apple.com/tutorials/swiftui/creating-and-combining-views
-
-
-
+-[x] https://developer.apple.com/tutorials/swiftui/creating-and-combining-views
+-[x] https://developer.apple.com/tutorials/swiftui/building-lists-and-navigation
+-[ ] https://developer.apple.com/tutorials/swiftui/handling-user-input
+-[ ] https://developer.apple.com/tutorials/swiftui/drawing-paths-and-shapes
+-[ ] https://developer.apple.com/tutorials/swiftui/animating-views-and-transitions
+-[ ] https://developer.apple.com/tutorials/swiftui/composing-complex-interfaces
+-[ ] https://developer.apple.com/tutorials/swiftui/working-with-ui-controls
+-[ ] https://developer.apple.com/tutorials/swiftui/interfacing-with-uikit
 
 Copyright 2019 Michael Vilabrera
 
