@@ -33,8 +33,10 @@ struct LandmarkList : View {
 #if DEBUG
 struct LandmarkList_Previews : PreviewProvider {
     static var previews: some View {
-        LandmarkList()
-            .environmentObject(UserData())
+        NavigationView {
+            LandmarkList()
+                .environmentObject(UserData())
+        }
     }
 }
 #endif
