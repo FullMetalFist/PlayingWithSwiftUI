@@ -45,8 +45,9 @@ struct CategoryHome : View {
                             .imageScale(.large)
                             .accessibility(label: Text("User Profile"))
                             .padding(),
-                        destination: Text("User Profile")
-                ))
+                        destination: ProfileHost()
+                )
+            )
         }
     }
 }
